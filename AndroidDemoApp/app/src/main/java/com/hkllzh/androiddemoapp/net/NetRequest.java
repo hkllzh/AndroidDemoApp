@@ -34,7 +34,7 @@ import org.apache.http.Header;
  * <p/>
  * lizheng -- 15/1/11
  * <p/>
- * FastWeiB
+ * AndroidDemoApp
  */
 public class NetRequest {
 
