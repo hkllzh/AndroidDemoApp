@@ -36,7 +36,8 @@ public class MainActivity extends Activity {
 
     public ArrayList<MainListBean> getShowData() {
         ArrayList<MainListBean> showData = new ArrayList<>();
-        showData.add(new MainListBean("下拉刷新", "一个通用的下拉刷新实现", C.Action.PullRefreshMain));
+        showData.add(new MainListBean("Scroller示例", "Scroller的示例程序", C.Action.ScrollerMain));
+        showData.add(new MainListBean("下拉刷新示例", "一个通用的下拉刷新实现", C.Action.PullRefreshMain));
         return showData;
     }
 }

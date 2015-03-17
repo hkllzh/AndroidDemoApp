@@ -19,6 +19,16 @@
         </activity>
 
         <activity
+            android:name=".pull_refresh.ScrollTestActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.hkllzh.ada.PullRefresh.Scroller" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+        </activity>
+
+        <activity
             android:name=".pull_refresh.MainActivity"
             android:screenOrientation="portrait">
             <intent-filter>

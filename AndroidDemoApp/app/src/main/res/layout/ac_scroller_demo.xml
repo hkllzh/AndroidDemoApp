@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.hkllzh.androiddemoapp.pull_refresh.ScrollLayout
+        android:id="@+id/scrollLayout"
+        android:layout_width="match_parent"
+        android:background="#0000FF"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tvTest"
+            android:clickable="true"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="#FF0000"
+            android:text="你好啊你好啊你好啊你好啊"
+            android:textColor="#00FF00" />
+    </com.hkllzh.androiddemoapp.pull_refresh.ScrollLayout>
+</LinearLayout>

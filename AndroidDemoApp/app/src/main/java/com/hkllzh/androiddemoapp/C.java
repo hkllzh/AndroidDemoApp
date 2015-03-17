@@ -13,6 +13,8 @@ public final class C {
 
     public final class Action {
 
+        // Scroller 示例
+        public static final String ScrollerMain = "com.hkllzh.ada.PullRefresh.Scroller";
         // 下拉刷新demo首页
         public static final String PullRefreshMain = "com.hkllzh.ada.PullRefresh.Main";
     }

@@ -49,10 +49,10 @@ public class ScrollLayout extends LinearLayout {
         }
     }
     // 调用这个方法进行滚动，这里我们只滚动竖直方向，
-    public void scrollTo(int y) {
+    public void scrollToXY(int x,int y) {
         // 参数1和参数2分别为滚动的起始点水平、竖直方向的滚动偏移量
         // 参数3和参数4为在水平和竖直方向上滚动的距离
-        mScroller.startScroll(getScrollX(), getScrollY(), 0, y);
+        mScroller.startScroll(getScrollX(), getScrollY(), x, y, 1000);
         this.invalidate();
     }
 

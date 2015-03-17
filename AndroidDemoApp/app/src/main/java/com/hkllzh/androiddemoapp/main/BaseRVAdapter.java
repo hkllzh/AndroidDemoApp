@@ -20,11 +20,11 @@ public abstract class BaseRVAdapter<VH extends RecyclerView.ViewHolder, T> exten
 
     protected ArrayList<T> mData;
 
-    public void setLoadMore(LoadMore loadMore) {
-        this.loadMore = loadMore;
+    public void setLoadMoreListener(LoadMoreListener loadMoreListener) {
+        this.loadMoreListener = loadMoreListener;
     }
 
-    private LoadMore loadMore;
+    private LoadMoreListener loadMoreListener;
 
     public void setData(ArrayList<T> mData) {
         this.mData = mData;
@@ -52,8 +52,8 @@ public abstract class BaseRVAdapter<VH extends RecyclerView.ViewHolder, T> exten
         // baseOnBindViewHolder((VH) holder, position);
         baseOnBindViewHolder((VH)holder,mData.get(position));
         if (getItemCount() > 1 && getItemCount() - 2 == position) {
-            if (null != loadMore) {
-                loadMore.loadMore();
+            if (null != loadMoreListener) {
+                loadMoreListener.loadMore();
             }
         }
     }
@@ -70,8 +70,10 @@ public abstract class BaseRVAdapter<VH extends RecyclerView.ViewHolder, T> exten
 
     public abstract void baseOnBindViewHolder(VH holder, T bean);
 
-
-    public interface LoadMore {
+    /**
+     * 加载更多监听器
+     */
+    public interface LoadMoreListener {
         public void loadMore();
     }
 }
